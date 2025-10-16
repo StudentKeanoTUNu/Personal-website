@@ -31,6 +31,12 @@
   font-weight: 700;
   color: #667eea;
   letter-spacing: 1px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-logo:hover {
+  color: #764ba2;
 }
 
 .nav-menu {
@@ -259,7 +265,6 @@
     content: 'KOC';
     font-size: 1.2rem;
     font-weight: 700;
-    color: #667eea;
   }
 
   .nav-menu {
@@ -322,8 +327,36 @@
 .personal-section {
   background: #f8f9fa;
   min-height: 60vh;
-  display: flex;
+  display: none;
   align-items: center;
+}
+
+.personal-section:target {
+  display: flex;
+}
+
+/* Work Section */
+.work-section {
+  background: white;
+  min-height: 60vh;
+  display: none;
+  align-items: center;
+}
+
+.work-section:target {
+  display: flex;
+}
+
+/* Education Section */
+.education-section {
+  background: #f8f9fa;
+  min-height: 60vh;
+  display: none;
+  align-items: center;
+}
+
+.education-section:target {
+  display: flex;
 }
 
 .section-content {
